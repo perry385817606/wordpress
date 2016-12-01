@@ -9,7 +9,7 @@ docker build --rm -t wordpress:v1 .
 docker images
 
 启动镜像
-docker run -d -p 80:80  containerID
+docker run -d --restart always -p 80:80 containerID
 
 
 访问站点
